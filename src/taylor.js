@@ -15,6 +15,6 @@ Taylor.prototype.step = function() {
   } else {
     this.setPosition(this.top, this.left -= 10);
   }
-  if(this.left+480 > $(window).width()) this.bounce = true;
+  if(this.left+480 > $('body').width()) this.bounce = true;
   if(this.left < 0) this.bounce = false;
 };
