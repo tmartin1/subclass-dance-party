@@ -1,15 +1,14 @@
-var MarioDancer = function(top, left, timeBetweenSteps){
+var DogDancer = function(top, left, timeBetweenSteps){
   Dancer.apply(this, arguments);
   this.oldStep = Dancer.prototype.step;
   $(this.$node).attr('class', 'dog');
-  this.goingUp = true;
   console.log('a');
 };
 
-MarioDancer.prototype = Object.create(Dancer.prototype);
-MarioDancer.prototype.constructor = MarioDancer;
+DogDancer.prototype = Object.create(Dancer.prototype);
+DogDancer.prototype.constructor = DogDancer;
 
-MarioDancer.prototype.step = function(){
+DogDancer.prototype.step = function(){
 
   this.oldStep();
  
