@@ -23,4 +23,7 @@ BananaDancer.prototype.step = function(){
       this.goingUp = true;
     }
   }.bind(this));
+
+  if(this.top+135 > $('body').height()) this.goingUp = true;
+  if(this.top < 0) this.goingUp = false;
 };

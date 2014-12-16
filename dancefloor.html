@@ -4,6 +4,7 @@
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
+    <script src="src/assemble.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/bananaDancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
@@ -13,12 +14,16 @@
   </head>
   <body>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="assemble" data-dancer-maker-function-name="Assemble">Assemble dancers</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="DogDancer">Add a dog</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BananaDancer">Add a banana</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="StarDancer">Add a star</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Taylor">Add the main attraction</a>
+      <span class="title">Object Dance Party</span>
+      <select id="assemble" class="assemble">
+        <option value="Top">Assemble Top</option>
+        <option value="Left">Assemble Left</option>
+        <option value="Random">Saturday Night Fever</option>
+      </select>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="DogDancer">Add a Dog</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BananaDancer">Add a Banana</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="StarDancer">Add a Star</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Taylor">Add the Main Attraction</a>
     </div>
     <script src="src/init.js"></script>
   </body>
