@@ -27,8 +27,8 @@ $(document).ready(function() {
         dancers[i].left = 0;
         dancers[i].setPosition(dancers[i].top, dancers[i].left);
       } else if ($('#assemble').val() === 'Random'){
-        dancers[i].top = ( $("body").height()-200 ) * Math.random();
-        dancers[i].left = ( $("body").width()-200 )* Math.random();
+        dancers[i].top = ( $(".dancefloor").height()-200 ) * Math.random();
+        dancers[i].left = ( $(".dancefloor").width()-200 )* Math.random();
         dancers[i].setPosition(dancers[i].top, dancers[i].left);
       }
     }

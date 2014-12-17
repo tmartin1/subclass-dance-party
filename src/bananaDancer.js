@@ -16,7 +16,7 @@ BananaDancer.prototype.step = function(){
     this.setPosition(this.top += 10, this.left);
   }
 
-  $('.banana').on('mouseover', function(){
+  $('.banana').on('click', function(){
     if( this.goingUp ){
       this.goingUp = false;
     } else {
@@ -24,6 +24,6 @@ BananaDancer.prototype.step = function(){
     }
   }.bind(this));
 
-  if(this.top+135 > $('body').height()) this.goingUp = true;
+  if(this.top+135 > $('.dancefloor').height()) this.goingUp = true;
   if(this.top < 0) this.goingUp = false;
 };

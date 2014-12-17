@@ -11,20 +11,42 @@
     <script src="src/starDancer.js"></script>
     <script src="src/taylor.js"></script>
     <script src="src/dogDancer.js"></script>
+    <script src="src/init.js"></script>
   </head>
   <body>
+    <div class="dancefloor"></div>
     <div class="topbar">
-      <span class="title">Object Dance Party</span>
+    </div>
       <select id="assemble" class="assemble">
         <option value="Top">Assemble Top</option>
         <option value="Left">Assemble Left</option>
         <option value="Random">Saturday Night Fever</option>
       </select>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="DogDancer">Add a Dog</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BananaDancer">Add a Banana</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="StarDancer">Add a Star</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="Taylor">Add the Main Attraction</a>
-    </div>
-    <script src="src/init.js"></script>
+      <span class="choose">Choose your dancers</span>
+      <ul>
+        <li>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="DogDancer">
+          <img src="./assets/dog.png" alt="Dog"  height="120" width="100">
+        </a>
+        </li>
+        <li>
+          <a href="#" class="addDancerButton" data-dancer-maker-function-name="BananaDancer">
+            <img src="./assets/banana.png" alt="Banana"  height="110" width="100">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="addDancerButton" data-dancer-maker-function-name="StarDancer">
+            <img src="./assets/star.png" alt="Star"  height="110" width="120">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="addDancerButton" data-dancer-maker-function-name="Taylor">
+            <img src="./assets/taylorpsd.png" alt="Taylor"  height="140" width="100">
+          </a>
+        </li>
+      </ul>
+
+
   </body>
+    <span class="title">Object Dance Party</span>
 </html>

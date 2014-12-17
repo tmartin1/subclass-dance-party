@@ -9,7 +9,14 @@ DogDancer.prototype.constructor = DogDancer;
 
 DogDancer.prototype.step = function(){
   this.oldStep();
-  var direction = [-10,0,10];
-  var movement = Math.floor(Math.random() * direction.length);
-  this.setPosition(this.top+direction[movement], this.left+direction[movement]);
+
+  this.$node.animate({
+    top: (( $(".dancefloor").height() ) * Math.random())/ 3,
+    left: (( $(".dancefloor").width() )* Math.random())/ 3,
+
+  });
+
+  // var direction = [-10,0,10];
+  // var movement = Math.floor(Math.random() * direction.length);
+  // this.setPosition(this.top+direction[movement], this.left+direction[movement]);
 };

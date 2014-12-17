@@ -9,7 +9,11 @@ StarDancer.prototype.constructor = StarDancer;
 
 StarDancer.prototype.step = function() {
   this.oldStep();
-  this.$node.fadeToggle('slow');
+  this.$node.animate({
+    top: ( $(".dancefloor").height()-400 ) * Math.random(),
+    left: ( $(".dancefloor").width()-400 )* Math.random(),
+    opacity: 0.5
+  });
 
   // this.$node.rotation();
 };

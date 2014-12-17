@@ -1,5 +1,5 @@
 var Taylor = function(top, left, timeBetweenSteps) {
-  Dancer.call(this, top, 0, 400);
+  Dancer.call(this, top -100, 0, 400);
   this.oldStep = Dancer.prototype.step;
   $(this.$node).attr('class', 'taylor');
   this.bounce = false;
@@ -15,6 +15,7 @@ Taylor.prototype.step = function() {
   } else {
     this.setPosition(this.top, this.left -= 10);
   }
-  if(this.left+480 > $('body').width()) this.bounce = true;
-  if(this.left < 0) this.bounce = false;
+  if(this.left+480 > $('.dancefloor').width()) {this.bounce = true;}
+  if(this.left < 0){ this.bounce = false;}
 };
+
